@@ -26,7 +26,7 @@ impl AppState {
 }
 
 #[allow(non_snake_case)]
-#[derive(Debug, Deserialize, Serialize, Clone)]
+#[derive(Debug, Deserialize)]
 pub struct UpdateTodoSchema {
     pub title: Option<String>,
     pub content: Option<String>,
