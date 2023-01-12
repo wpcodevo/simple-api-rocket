@@ -13,6 +13,7 @@ mod response;
 #[launch]
 fn rocket() -> _ {
     let app_data = model::AppState::init();
+    println!("{}", "🚀 The server is ready to accept requests");
     rocket::build().manage(app_data).mount(
         "/api",
         routes![
